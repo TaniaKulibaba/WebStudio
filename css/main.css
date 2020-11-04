@@ -636,7 +636,7 @@ img {
 }
 
 .team {
-  width: 1600px;
+  width: 100%;
   height: 708px;
   background-color: #f5f4fa;
   margin: auto;
@@ -722,7 +722,7 @@ img {
 }
 
 .section-footer {
-  width: 1600px;
+  width: 100%;
   height: 252px;
   margin: auto;
   background-color: #2f303a;
