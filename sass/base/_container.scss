@@ -1,0 +1,68 @@
+.container {
+  outline: 1px solid black;
+  padding: 0 15px;
+  //margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    //margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+
+    .hero & {
+      padding: 200px 0;
+    }
+
+    .features & {
+      padding: 94px 15px;
+    }
+  }
+}
+
+//.container {
+//  width: 1200px;
+//  margin: 0 auto;
+//
+//  .header & {
+//    display: flex;
+//    align-items: center;
+//  }
+//
+//  .hero & {
+//    padding: 200px 0;
+//  }
+//
+//  .features & {
+//    padding: 94px 15px;
+//  }
+//
+//  .field & {
+//    padding: 94px 15px;
+//  }
+//
+//  .team & {
+//    padding: 94px 15px;
+//  }
+//
+//  .clients & {
+//    padding: 94px 0;
+//  }
+//
+//  .portfolio & {
+//    padding: 94px 15px;
+//    border-top: 1px solid #ececec;
+//  }
+//}
+//
