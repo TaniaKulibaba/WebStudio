@@ -39,6 +39,17 @@
   display: none;
 }
 
+.menu-button:focus,
+.menu-button:active,
+.menu-button:hover,
+.icon-cross:focus,
+.icon-cross:hover,
+.icon-cross:active,
+.menu-button:checked,
+.icon-cross:checked {
+  outline: none;
+}
+
 .menu-container {
   display: none;
   position: absolute;
