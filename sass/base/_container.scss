@@ -1,7 +1,7 @@
 .container {
   outline: 1px solid black;
   padding: 0 15px;
-  //margin: 0 auto;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -28,17 +28,17 @@
     .features & {
       padding: 94px 15px;
     }
+
+    .header & {
+      display: flex;
+      align-items: center;
+    }
   }
 }
 
 //.container {
 //  width: 1200px;
 //  margin: 0 auto;
-//
-//  .header & {
-//    display: flex;
-//    align-items: center;
-//  }
 //
 //  .hero & {
 //    padding: 200px 0;
