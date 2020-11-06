@@ -40,6 +40,9 @@ img {
   .features .container {
     padding: 60px 15px;
   }
+  .team .container {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,6 +64,12 @@ img {
   .header .container {
     display: flex;
     align-items: center;
+  }
+  .field .container {
+    padding: 94px 15px;
+  }
+  .team .container {
+    padding: 94px 15px;
   }
 }
 

@@ -8,9 +8,12 @@
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
-    //margin: 0 auto;
 
     .features & {
+      padding: 60px 15px;
+    }
+
+    .team & {
       padding: 60px 15px;
     }
   }
@@ -37,6 +40,14 @@
     .header & {
       display: flex;
       align-items: center;
+    }
+
+    .field & {
+      padding: 94px 15px;
+    }
+
+    .team & {
+      padding: 94px 15px;
     }
   }
 }

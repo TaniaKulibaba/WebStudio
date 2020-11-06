@@ -82,14 +82,6 @@
   }
 }
 
-//.features-list {
-//  display: flex;
-
-// &-item:not(:last-child) {
-//   margin-right: 30px;
-// }
-//}
-
 .features-list-name {
   &-antenna::before {
     background-image: url('../images/antenna.svg');

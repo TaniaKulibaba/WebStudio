@@ -52,6 +52,9 @@ img {
   .features .container {
     padding: 60px 15px;
   }
+  .team .container {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -73,6 +76,12 @@ img {
   .header .container {
     display: flex;
     align-items: center;
+  }
+  .field .container {
+    padding: 94px 15px;
+  }
+  .team .container {
+    padding: 94px 15px;
   }
 }
 
@@ -767,58 +776,50 @@ img {
   background-image: url("../images/astronaut.svg");
 }
 
-.field-list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (max-width: 1119px) {
+  .field {
+    display: none;
+  }
 }
 
-.field-list-img-wrapper {
-  position: relative;
-}
-
-.overlay-index {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background: rgba(47, 48, 58, 0.8);
-}
-
-.overlay-text-index {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  padding: 27px;
+@media screen and (min-width: 1200px) {
+  .field-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .field-list-img-wrapper {
+    position: relative;
+  }
+  .overlay-index {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+  }
+  .overlay-text-index {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 27px;
+  }
 }
 
 .team {
   width: 100%;
-  height: 708px;
   background-color: #f5f4fa;
   margin: auto;
-}
-
-.team-list {
-  display: flex;
 }
 
 .team-list-item {
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-list-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.team-list-content {
-  padding: 30px 32px;
 }
 
 .team-list-name {
@@ -839,6 +840,13 @@ img {
   font-weight: 400;
   color: #757575;
   margin-bottom: 16px;
+}
+
+@media screen and (min-width: 480px) {
+  .team-list-item {
+    width: 450px;
+    height: 622px;
+  }
 }
 
 .clients {
