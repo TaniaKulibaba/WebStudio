@@ -32,6 +32,10 @@
   .container {
     width: 768px;
   }
+
+  .portfolio & {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
