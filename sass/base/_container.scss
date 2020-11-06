@@ -1,5 +1,6 @@
 .container {
   outline: 1px solid black;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -8,6 +9,10 @@
   .container {
     width: 480px;
     //margin: 0 auto;
+
+    .features & {
+      padding: 60px 15px;
+    }
   }
 }
 
