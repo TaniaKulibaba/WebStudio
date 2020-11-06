@@ -55,6 +55,9 @@ img {
   .team .container {
     padding: 60px 15px;
   }
+  .clients .container {
+    padding: 60px 15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -81,6 +84,9 @@ img {
     padding: 94px 15px;
   }
   .team .container {
+    padding: 94px 15px;
+  }
+  .clients .container {
     padding: 94px 15px;
   }
 }
@@ -202,7 +208,7 @@ img {
 
 .social-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .footer-sotial .social-list {
@@ -276,12 +282,19 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
   text-align: center;
   color: #212121;
+}
+
+@media screen and (min-width: 1200px) {
+  .title {
+    font-size: 36px;
+    line-height: 1.167;
+  }
 }
 
 .backdrop {
@@ -829,6 +842,7 @@ img {
   text-align: center;
   font-weight: 500;
   color: #212121;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
@@ -847,37 +861,42 @@ img {
     width: 450px;
     height: 622px;
   }
+  .team-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
-.clients {
-  width: 1600px;
-  height: 370px;
-  margin: auto;
+@media screen and (min-width: 768px) {
+  .team-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .team-list-item {
+    width: 354px;
+    height: 536px;
+  }
 }
 
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
-
-.clients-list-link:hover {
-  border: 1px solid #2196f3;
-}
-
-.clients-list-item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .team-list-item {
+    width: 270px;
+    height: 428px;
+  }
 }
 
 .clients-list-link {
-  display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
-  height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid #2196f3;
 }
 
 .clients-list-svg {
@@ -888,6 +907,68 @@ img {
 
 .clients-list-link:hover .clients-list-svg {
   fill: #2196f3;
+}
+
+.clients-list-link:focus .clients-list-svg {
+  fill: #2196f3;
+}
+
+@media screen and (min-width: 480px) {
+  .clients-list-item {
+    width: 210px;
+    height: 90px;
+  }
+  .clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .clients-list-link {
+    display: flex;
+    width: 210px;
+    height: 90px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .clients-list-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    width: 226px;
+  }
+  .clients-list-link {
+    width: 226px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  .clients-list-item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+  }
+  .clients-list-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-list-item {
+    width: 170px;
+  }
+  .clients-list-link {
+    width: 170px;
+  }
+  .clients-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .clients-list-item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .section-footer {
