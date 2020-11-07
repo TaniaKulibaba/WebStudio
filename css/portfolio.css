@@ -591,6 +591,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .header {
+    height: 80px;
+  }
   .navigation {
     display: flex;
     align-items: baseline;
@@ -610,6 +613,9 @@ img {
     margin-right: 50px;
   }
   .header-address {
+    display: flex;
+    flex-grow: 1;
+    align-items: baseline;
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -617,7 +623,10 @@ img {
     line-height: 1.167;
     letter-spacing: 0.02em;
     color: #757575;
-    justify-content: flex-start;
+    justify-content: flex-end;
+  }
+  .header-tel-link {
+    margin-left: 30px;
   }
 }
 
