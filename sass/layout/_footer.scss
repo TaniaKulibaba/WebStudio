@@ -1,38 +1,90 @@
 .section-footer {
   width: 100%;
-  height: 252px;
+  //  height: 252px;
   margin: auto;
   background-color: #2f303a;
+}
 
-  & .address {
-    margin-top: 20px;
+.section-footer .address {
+  margin-top: 20px;
+}
+
+.contact-list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+.contact-list-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-list-address {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: $light-text-color;
+}
+
+@media screen and (min-width: 480px) {
+  .section-footer {
+    width: 480px;
+    height: 603px;
+  }
+
+  .footer-address {
+    text-align: center;
   }
 }
 
-.footer {
-  display: flex;
-  padding: 60px 0;
-  text-align: left;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .section-footer {
+    width: 768px;
+    height: 463px;
+  }
+
+  .address-social-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+  }
 }
 
-.contact-list {
-  &-item:not(:last-child) {
+@media screen and (min-width: 1200px) {
+  .section-footer {
+    width: 1200px;
+    height: 252px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    text-align: left;
+    padding: 60px 0;
+  }
+
+  .address-social-wrapper {
+    display: flex;
+    //justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .footer-address {
+    display: block;
+    text-align: left;
+    margin-right: 70px;
+  }
+
+  .footer-sotial {
+    display: block;
+    text-align: left;
+  }
+
+  .contact-list-item:not(:last-child) {
     margin-bottom: 9px;
-  }
-
-  &-link {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  &-address {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
-    letter-spacing: 0.03em;
-    color: $light-text-color;
   }
 }
