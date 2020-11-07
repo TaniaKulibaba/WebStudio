@@ -46,6 +46,10 @@ img {
   .clients .container {
     padding: 60px 15px;
   }
+  .portfolio .container {
+    padding: 60px 15px;
+    border-top: 1px solid #ececec;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -79,6 +83,7 @@ img {
   }
   .portfolio .container {
     padding: 94px 15px;
+    width: 1200px;
     border-top: 1px solid #ececec;
   }
 }
@@ -440,7 +445,7 @@ img {
   color: #757575;
 }
 
-.portfolio-img-wrapper {
+.portfolio-cards-list-img-wrapper {
   position: relative;
   overflow: hidden;
 }
@@ -464,7 +469,6 @@ img {
 }
 
 .overlay {
-  display: none;
   position: absolute;
   top: 0;
   left: 0;
@@ -488,36 +492,51 @@ img {
 }
 
 @media screen and (min-width: 480px) {
-  .portfolio {
-    padding: 60px 15px;
-    border-top: 1px solid #ececec;
-  }
   .portfolio-cards-link {
     width: 450px;
     height: 404px;
   }
-  .portfolio-cards-link:not(:last-child) {
-    margin-bottom: 30px;
+  .cards-link {
+    width: 450px;
+    height: 404px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .portfolio-cards-link {
     width: 354px;
+    height: 440px;
+  }
+  .cards-link {
+    width: 354px;
+    height: 440px;
   }
   .portfolio-cards-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 1119px) {
   .portfolio-cards-link:not(:last-child) {
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1119px) {
+  .portfolio-cards-list {
+    justify-content: space-between;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .portfolio-cards-link {
     width: 370px;
+    height: 404px;
+  }
+  .cards-link {
+    width: 370px;
+    height: 404px;
   }
   .portfolio-cards-link:not(:nth-child(3n)) {
     margin-right: 30px;
