@@ -842,6 +842,11 @@ img {
   background-color: #2f303a;
 }
 
+.podval {
+  width: 100%;
+  background-color: #2f303a;
+}
+
 .section-footer .address {
   margin-top: 20px;
 }
