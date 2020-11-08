@@ -454,6 +454,15 @@ img {
   position: relative;
 }
 
+.header-tel-link {
+  margin-left: 30px;
+  color: #757575;
+}
+
+.header-mail-link {
+  color: #757575;
+}
+
 .navigation-mail-link, .navigation-tel-link {
   font-weight: 500;
   font-size: 14px;
@@ -630,6 +639,10 @@ img {
   }
   .header-tel-link {
     margin-left: 30px;
+    color: #757575;
+  }
+  .header-mail-link {
+    color: #757575;
   }
 }
 

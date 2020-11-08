@@ -12,6 +12,14 @@
   //  }
 }
 
+.header-tel-link {
+  margin-left: 30px;
+  color: #757575;
+}
+.header-mail-link {
+  color: #757575;
+}
+
 .navigation {
   &-mail-link,
   &-tel-link {
@@ -213,5 +221,10 @@
 
   .header-tel-link {
     margin-left: 30px;
+    color: #757575;
+  }
+
+  .header-mail-link {
+    color: #757575;
   }
 }
